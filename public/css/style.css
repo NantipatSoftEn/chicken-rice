@@ -98,57 +98,13 @@
 
 /**----- Fonts ----**/
 
-@font-face {
-    font-family: 'BebasRegular';
-    src: url('../fonts/bebas-webfont.eot');
-    src: url('../fonts/bebas-webfont.woff') format('woff'),
-         url('../fonts/bebas-webfont.ttf') format('truetype'),
-         url('../fonts/bebas-webfont.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('../fonts/opensans-regular-webfont.eot');
-    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-regular-webfont.woff') format('woff'),
-         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
-         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'open_sansbold';
-    src: url('../fonts/opensans-bold-webfont.eot');
-    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-bold-webfont.woff') format('woff'),
-         url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
-         url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'open_sanssemibold';
-    src: url('../fonts/opensans-semibold-webfont.eot');
-    src: url('opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
-         url('../fonts/opensans-semibold-webfont.ttf') format('truetype'),
-         url('../fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /*General Styling*/
 body{
 	padding:0;
 	margin:0;
 	color:#111111;
 	position: relative;
-	font-family: 'open_sansregular';
+  font-family: 'Itim','Indie Flower', cursive;
 	overflow-x:hidden;
 }
 body,html{
@@ -178,12 +134,12 @@ h1,h2,h3,h4,h5,h6{
 	margin:0;
 }
 h1{
-	 font-family: 'BebasRegular';
+	 font-family: 'Itim','Indie Flower', cursive;
 	 font-size:54px;
 	 color:#fff;
 }
 h2{
-	font-family: 'BebasRegular';
+	font-family: 'Itim','Indie Flower', cursive;
 	font-size:32px;
 }
 
@@ -199,7 +155,7 @@ p{
 /*Placeholders*/
 ::-webkit-input-placeholder{
    color:#606060;
-	font-family: 'open_sansregular';
+	font-family: 'Itim','Indie Flower', cursive;
 }
 
 :-moz-placeholder { /* Firefox 18- */
