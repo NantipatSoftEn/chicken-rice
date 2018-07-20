@@ -117,7 +117,8 @@ ol, ul{
 	list-style:none;
 }
 a, a:focus{
-	color: inherit;
+  color: inherit;
+  font-family: 'Itim','Indie Flower', cursive;
 }
 a, a:hover, a:focus{
 	outline:none;
