@@ -809,12 +809,13 @@ ul.tags li a, ul.social_icon li a,
 .hesperiden .tp-tab{
 	position:absolute;
 	padding:0 10px;
-	border-bottom:none;
+  border-bottom:none;
+  font-family:'Itim','Indie Flower', cursive;
 }
 .hesperiden .tp-tab:first-child{ padding-left:0; }
 .tp-tab .tp-tab-title{
 	font-size:24px;
-	font-family:'BebasRegular';
+	font-family:'Itim','Indie Flower', cursive;
 	margin:10px 0 0;
 	color:#ffffff;
 	line-height: normal;
