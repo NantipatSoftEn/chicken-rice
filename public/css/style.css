@@ -1026,7 +1026,7 @@ ul.tags li a, ul.social_icon li a,
 
 /* ================== Counters Fact Info ================== */
 #facts{
-	background:url(../images/bg-facts.jpg) no-repeat fixed;
+	background:url(../images/extends/paralex2.jpg) no-repeat fixed;
 	padding:6% 0;
 	background-size:cover;
 }
@@ -1895,7 +1895,7 @@ form.callus .btn-submit:hover{
 .order_section hr { border-color: rgba(255, 255, 255, 0.18); }
 .appointment_form {}
 .paralax{
-	background:url(../images/paralax.jpg) no-repeat fixed;
+	background:url(../images/extends/paralex1.jpg) no-repeat fixed;
 	padding:6% 0;
 	background-size:cover;
 	background-position:center center;
