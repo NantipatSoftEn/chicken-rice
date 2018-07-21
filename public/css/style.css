@@ -197,7 +197,7 @@ textarea:-ms-input-placeholder {
 }
 h3, #welcome ul.welcome_list li, .service_wrapper .items > li > a,
 .procedure_content .items > li > a, .form-container form button{
-   font-family: 'open_sanssemibold';
+  font-family: 'Itim','Indie Flower', cursive;
 }
 .padding{
 	padding-bottom:100px;
