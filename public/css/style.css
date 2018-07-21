@@ -632,11 +632,11 @@ ul.tags li a, ul.social_icon li a,
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;
-  font-size: 14px;
+  font-size: 20px;
   text-transform: uppercase;
   padding:10px 30px;
   border-radius:30px;
-  font-family: 'BebasRegular';
+  font-family: 'Itim','Indie Flower', cursive;
   line-height:inherit;
   letter-spacing:0.5px;
 }
@@ -678,7 +678,7 @@ ul.tags li a, ul.social_icon li a,
 	font-size:14px;
 	padding:14px;
 	border-bottom:1px solid #dbdbdb;
-	margin:0 !important;
+  margin:0 !important;
 	
 	-moz-transition:all 0.6s ease 0.1s;
   -webkit-transition:all 0.6s ease 0.1s;
