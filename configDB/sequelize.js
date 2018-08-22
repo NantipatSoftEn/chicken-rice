@@ -10,17 +10,8 @@ const sequelize = new Sequelize(config.server, config.username, config.password,
 });
 sequelize.sync()
 const op = Sequelize.Op;
-sequelize.sync()
-    .then(() => model.food.create({
-        id: '',
-        name : 'headage',
-        price: 'sdfdsfs',
-        image:'dfsf',
-        des:'sdsd',
-        type:'test',
-        createdAt: '',
-        updatedAt: ''
-    }))
+
+
 const model = {};
 model.Sequelize = Sequelize;
 model.sequelize = sequelize;
