@@ -61,15 +61,14 @@
         <h2 class="heading">Our &nbsp; Menu</h2>
         <hr class="heading_space"/>
         <ul class="menu_widget">
-            <li>หมูกรอบห้องกง<span>150 บาท</span>
+            <% for(var i=0; i<data.length; i++) {%>
+            <li>
+            <%= data[i].name%>
+            <span><%=data[i].price %> บาท</span>
             </li>
-            <li>ไก่ฮองเต้<span>100 บาท
-                </span>
-            </li>
-            <li>ฮองเต้น้ำมันหอย<span>40 บาท</span>
-            </li>
-            <li>ข้าวมันไก่<span>50 บาท</span>
-            </li>
+
+            <% } %>
+         
 
         </ul>
         <h3>Other Special Menu</h3>
