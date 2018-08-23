@@ -4,6 +4,7 @@
         <hr class="heading_space"/>
         <div class="slider_wrap">
             <div id="service-slider" class="owl-carousel">
+
                 <div class="item">
                     <div class="item_inner">
                         <div class="image">
@@ -61,19 +62,17 @@
         <h2 class="heading">Our &nbsp; Menu</h2>
         <hr class="heading_space"/>
         <ul class="menu_widget">
-            <% for(var i=0; i<data.length; i++) {%>
-            <li>
-            <%= data[i].name%>
-            <span><%=data[i].price %> บาท</span>
-            </li>
+            <% for(var i=0; i<getall.length; i++) {%>
+                <li>
+                    <%= getall[i].name%>
+                    <span><%=getall[i].price %>
+                        บาท</span>
+                </li>
 
             <% } %>
-         
 
         </ul>
-        <h3>Other Special Menu</h3>
-        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-            <strong>molestie consequat</strong>, vel illum dolore nulla facilisis.
-        </p>
+        <h3></h3>
+
     </div>
 </div>

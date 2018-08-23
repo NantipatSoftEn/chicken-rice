@@ -8,5 +8,5 @@ var router = express.Router();
 
 var foodServices = require('../Services/foodServices');
 router.get('/', foodServices.getall);
-
+router.get('/', foodServices.tophot);
 module.exports = router;
