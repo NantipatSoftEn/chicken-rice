@@ -7,10 +7,8 @@
 // DELETE  /forums/:forum       ->  destroy
 const model = require('../configdb/sequelize')
 
-exports.test = function (req, res) {
-  model.food.findAll({ where: {
-    type: 'เมนูไก่สับ'
-  }}).then(result => {
+exports.getall = function (req, res) {
+  model.food.findAll().then(result => {
     res.render('index', { data: result});
   })
 };

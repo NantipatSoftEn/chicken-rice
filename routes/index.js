@@ -7,6 +7,6 @@ var router = express.Router();
 // });
 
 var foodServices = require('../Services/foodServices');
-router.get('/sub', foodServices.test);
+router.get('/', foodServices.getall);
 
 module.exports = router;
