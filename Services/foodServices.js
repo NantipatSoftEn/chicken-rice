@@ -5,22 +5,18 @@
 // GET     /forums/:forum/edit  ->  edit     show form edit
 // PUT     /forums/:forum       ->  update   update data
 // DELETE  /forums/:forum       ->  destroy
-const model = require('../configdb/sequelize')
+const model = require('../configDB/sequelize')
 
-exports.getall = function (req, res) {
-  model.food.findAll().then(result => {
-    res.render('index', { getall: result});
-  })
+exports.getall =  async (req, res) => {
+  const foods = await model.food.findAll({
+    order: [
+        ['price', 'DESC']
+    ]
+});
+  const foodshot= foods.filter(food => food.type === "เมนูเด็ด");
+  // const foodshot= foods.filter(food => food.type === "เมนู");
+  res.render('index', { foods:foods , foodshot:foodshot});
 };
 
-exports.tophot = function (req, res) {
-  model.food.findAll({
-    where: {
-      type: 'เมนูเด็ด'
-    }
-  }).then(result => {
-    res.render('', { tophot: result});
-  })
-};
 
 
