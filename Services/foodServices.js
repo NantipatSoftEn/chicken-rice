@@ -7,24 +7,11 @@
 // DELETE  /forums/:forum       ->  destroy
 const model = require('../configDB/sequelize')
 
-exports.getall = function (req, res) {
-  model.food.findAll({
-    order: [
-        ['price', 'DESC']
-    ] 
-}).then(result => {
-    res.render('index', { getall: result});
-  })
+exports.getall =  async (req, res) => {
+  const foods = await model.food.findAll();
+  const foods_ded = foods.filter(food => food.type === "เมนูเด็ด");
+  res.render('index', { foods, foods_ded});
 };
 
-exports.tophot = function (req, res) {
-  model.food.findAll({
-    where: {
-      type: 'เมนูเด็ด'
-    }
-  }).then(result => {
-    res.render('', { tophot: result});
-  })
-};
 
 
