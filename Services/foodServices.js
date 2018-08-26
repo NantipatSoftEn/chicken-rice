@@ -13,9 +13,18 @@ exports.getall =  async (req, res) => {
         ['price', 'DESC']
     ]
 });
+
+  const foods_cksub= foods.filter(food => food.type === "เมนูไก่สับ");
+  const foods_noodle= foods.filter(food => food.type === "เมนูก๋วยเตี๋ยวไก่");
+  const foods_ckrice= foods.filter(food => food.type === "เมนูข้าวมันไก่");
   const foodshot= foods.filter(food => food.type === "เมนูเด็ด");
-  // const foodshot= foods.filter(food => food.type === "เมนู");
-  res.render('index', { foods:foods , foodshot:foodshot});
+  res.render('index', 
+  { foods:foods , 
+    foods_cksub:foods_cksub,
+    foods_noodle:foods_noodle,
+    foods_ckrice:foods_ckrice,
+    foodshot:foodshot
+  });
 };
 
 
