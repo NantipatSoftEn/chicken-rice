@@ -5,7 +5,7 @@
 // GET     /forums/:forum/edit  ->  edit     show form edit
 // PUT     /forums/:forum       ->  update   update data
 // DELETE  /forums/:forum       ->  destroy
-const model = require('../configdb/sequelize')
+const model = require('../configDB/sequelize')
 
 exports.getall = function (req, res) {
   model.food.findAll().then(result => {
