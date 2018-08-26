@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         price:{
             field: 'price',
-            type: DataTypes.STRING(191),
+            type: DataTypes.INTEGER(10),
             primaryKey: false,
             autoIncrement: false,
         },

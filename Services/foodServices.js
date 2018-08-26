@@ -8,7 +8,11 @@
 const model = require('../configDB/sequelize')
 
 exports.getall = function (req, res) {
-  model.food.findAll().then(result => {
+  model.food.findAll({
+    order: [
+        ['price', 'DESC']
+    ] 
+}).then(result => {
     res.render('index', { getall: result});
   })
 };

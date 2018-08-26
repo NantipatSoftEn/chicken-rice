@@ -8,7 +8,6 @@ const sequelize = new Sequelize(config.server, config.username, config.password,
         timestamps: true
     },
 });
-sequelize.sync()
 const op = Sequelize.Op;
 
 
