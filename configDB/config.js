@@ -6,7 +6,7 @@ const type = 'tongtong';
 // exports.server = type === 'dev' ? 'dev' : 'node';
 exports.server = type;
 exports.username = 'root';
-exports.password = 'password';
+exports.password = '';
 /* port
     production: 3000,
     develop: 7000

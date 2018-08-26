@@ -8,9 +8,14 @@
 const model = require('../configDB/sequelize')
 
 exports.getall =  async (req, res) => {
-  const foods = await model.food.findAll();
-  const foods_ded = foods.filter(food => food.type === "เมนูเด็ด");
-  res.render('index', { foods, foods_ded});
+  const foods = await model.food.findAll({
+    order: [
+        ['price', 'DESC']
+    ]
+});
+  const foodshot= foods.filter(food => food.type === "เมนูเด็ด");
+  // const foodshot= foods.filter(food => food.type === "เมนู");
+  res.render('index', { foods:foods , foodshot:foodshot});
 };
 
 
