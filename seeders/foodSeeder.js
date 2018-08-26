@@ -43,7 +43,7 @@ var list = [
 ];
 for (var i = 0; i < list.length; i++) {
   data[i] = {
-    id: '',
+    id: i,
     name:list[i][0],
     price:list[i][1],
     image:list[i][2],
@@ -59,6 +59,7 @@ module.exports = {
       Add altering commands here.
       Return a promise to correctly handle asynchronicity.
     */
+   console.log(data);
     return queryInterface.bulkInsert('foods', data, {});
   },
 
