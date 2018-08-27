@@ -138,4 +138,14 @@
         width: 240px;
         height: 150px;
     }
+
+    .copyright{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mb_hidef {
+        margin-left: 60%;
+        font-size: 25px;
+    }
 }
