@@ -12,7 +12,7 @@ exports.getall =  async (req, res) => {
     order: [
         ['price', 'DESC']
     ]
-});
+  });
 
   const foods_cksub= foods.filter(food => food.type === "เมนูไก่สับ");
   const foods_noodle= foods.filter(food => food.type === "เมนูก๋วยเตี๋ยวไก่");

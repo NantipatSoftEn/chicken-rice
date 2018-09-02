@@ -1,0 +1,19 @@
+<% for(var i=0; i< foodshot.length; i++) {%>
+    <div class="col-1-4 mix work-item hot">
+        <div class="wrap-col">
+            <div class="item-container">
+                <div class="image">
+                    <img class="ds_fix_img"  src='<%=foodshot[i].image%>' alt="ตงๆข้าวมันไก่ภูเก็ต ข้าวมันไก่ภูเก็ต ร้านอาหารภูเก็ต ที่นั่งชิว ของกินภูเก็ต ของกินใกล้ฉัน ราคาถูก ของเด็ดภูเก็ต"/>
+                    <div class="overlay">
+                        <a
+                            class="fancybox overlay-inner"
+                            href='<%=foodshot[i].image%>'
+                            data-fancybox-group="gallery">
+                            <i class=" icon-eye6"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% } %>

@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-12 text-center" id="a2">
+        <h2 class="heading mb_font">เมนูหลากหลาย</h2>
+        <hr class="heading_space"/>
+        <div class="work-filter">
+            <ul class="text-center">
+                <li>
+                    <a href="javascript:;" data-filter="all" class="active filter mb_font_list">อาหารทั้งหมด</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-filter=".kaisub" class="filter mb_font_list">เมนูไก่สับ</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-filter=".noodle" class="filter mb_font_list">เมนูก๋วยเตี๋ยวไก่</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-filter=".rice" class="filter mb_font_list">เมนูข้าวมันไก่</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-filter=".hot" class="filter mb_font_list">เมนูเด็ด</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="zerogrid">
+        <div class="wrap-container">
+            <div class="wrap-content clearfix home-gallery">
+            <% include sub_section4/kaisub.ejs %>
+            <% include sub_section4/noodle.ejs %>
+            <% include sub_section4/rice.ejs %>
+            <% include sub_section4/hot.ejs %>
+            </div>
+        </div>
+    </div>
+</div>
