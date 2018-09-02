@@ -37,6 +37,10 @@
     font-size: 22px !important;
 }
 
+.mb--hide {
+    opacity: 0;
+}
+
 
 
 
