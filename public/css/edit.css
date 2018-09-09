@@ -41,6 +41,10 @@
     opacity: 0;
 }
 
+.alert-text {
+    display: none;
+}
+
 
 
 
