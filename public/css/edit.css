@@ -4,7 +4,7 @@
     z-index: 999;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.73);
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 .tp-tabs {
@@ -46,6 +46,21 @@
 }
 
 
+#top-bar .open-cart{
+    margin-right: 20px;
+}
+
+#top-bar p {
+    font-size: 18px;
+}
+
+#top-bar .header {
+    font-size: 25px;
+}
+
+#navigation .fix-nav {
+    margin-bottom: -25px;
+}
 
 
 
@@ -138,6 +153,10 @@
 
     .mb_hidef {
         display: none;
+    }
+
+    #navigation .fix-nav {
+        margin-bottom: 0px;
     }
 }
 
