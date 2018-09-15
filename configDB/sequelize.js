@@ -1,8 +1,13 @@
 'use strict';
 const config = require('./config');
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize(config.server, config.username, config.password, {
-    host: 'localhost',
+
+const server = process.env.DB_NAME || config.server;
+const username = process.env.DB_USERNAME || config.username;
+const password = process.env.DB_PASSWORD || config.password
+
+const sequelize = new Sequelize(server, username, password, {
+    host: process.env.DB_HOST_DOCKER || 'localhost',
     dialect: 'mysql',
     define: {
         timestamps: true

@@ -1,20 +1,20 @@
 <div class="row" id="a1">
     <div class="col-md-8 mb_center">
-        <h2 class="heading mb_font" >เมนูของเรา</h2>
+        <h2 class="heading mb_font" >เมนูเด็ดประจำร้าน</h2>
         <hr class="heading_space"/>
         <div class="slider_wrap">
             <div id="service-slider" class="owl-carousel">  
-                <% for(var i=0; i<foods.length; i++) {%>
+                <% for(var i=0; i<foodshot.length; i++) {%>
                     <div class="item">
                         <div class="item_inner">
                             <div class="image">
-                                <img class="mb_img_fixed" src='<%= foods[i].image%>' alt="Services Image"/>
+                                <img class="mb_img_fixed" src='<%= foodshot[i].image%>' alt="Services Image"/>
                                 <a href="#"></a>
                             </div>
                             <h3 style="text-align: center;">
-                                <a class="mb_menu_size"><%=foods[i].name%></a>
+                                <a class="mb_menu_size"><%=foodshot[i].name%></a>
                             </h3>
-                            <p class="mb_menu_price"><%=foods[i].price%> บาท</p>
+                            <p class="mb_menu_price"><%=foodshot[i].price%> บาท</p>
                         </div>
                     </div>
                 <% } %>
@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="col-md-4 mb_center">
-        <h2 class="heading mb_font mb--hide">เมนูของเรา</h2>
+        <h2 class="heading mb_font">เมนูของเรา</h2>
         <hr class="heading_space"/>
         <ul class="menu_widget mb_left">
             <% for(var i=0; i<foods.length; i++) {%>
