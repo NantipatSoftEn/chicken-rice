@@ -1,20 +1,25 @@
 <% extend('template/layout') %>
 <!--Loader-->
-<div class="loader">
+
+ <div class="loader">
     <div class="cssload-container">
         <div class="cssload-circle"></div>
         <div class="cssload-circle"></div>
     </div>
 </div>
+
 <!--Topbar-->
 <div id="a0" class="topbar">
-    <div class="container">
+    <div id="top-bar" class="container">
         <div class="row">
             <div class="col-md-12">
-                <p class="pull-left hidden-xs">ตงตง ข้าวมันไก่สูตรเบตง</p>
+                <p class="pull-left hidden-xs header">ตงตง ข้าวมันไก่บ้านสูตรเบตง</p>
                 <p class="pull-right">
                     <i class="fa fa-phone"></i>
                     โทร 096 272 2274</p>
+                <p class="pull-right open-cart">
+                    <i class="fa fa-calendar"></i>
+                    เวลาเปิดร้าน 10.00- 21.00 ทุกวันจันทร์ - เสาร์   </p>
             </div>
         </div>
     </div>
@@ -25,7 +30,7 @@
     <div id="navigation" data-spy="affix" data-offset-top="20">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 fix-nav">
                     <% include components/navbar.ejs %>
                 </div>
             </div>
