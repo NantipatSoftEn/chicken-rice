@@ -1,23 +1,23 @@
 <div class="row" id="a1">
     <div class="col-md-8 mb_center">
-        <h2 class="heading mb_font" >เมนูของเรา</h2>
+        <h2 class="heading mb_font" >เมนูแนะนำจากทางร้าน</h2>
         <hr class="heading_space"/>
         <div class="slider_wrap">
-            <div id="service-slider" class="owl-carousel">  
-                <% for(var i=0; i<foods.length; i++) {%>
-                    <div class="item">
+            <div id="service-slider" class="owl-carousel"> 
+            <% seafoodsSuggestLists.map(food => { %> 
+                <div class="item">
                         <div class="item_inner">
                             <div class="image">
-                                <img class="mb_img_fixed" src='<%= foods[i].image%>' alt="Services Image"/>
+                                <img class="mb_img_fixed" src='<%= food.imagePath%>' alt="Services Image"/>
                                 <a href="#"></a>
                             </div>
                             <h3 style="text-align: center;">
-                                <a class="mb_menu_size"><%=foods[i].name%></a>
+                                <a class="mb_menu_size"><%=food.name%></a>
                             </h3>
-                            <p class="mb_menu_price"><%=foods[i].price%> บาท</p>
+                            <p class="mb_menu_price"><%=food.price%> บาท</p>
                         </div>
                     </div>
-                <% } %>
+            <% }) %>
             </div>
 
         </div>

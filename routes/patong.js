@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const model = require('../configDB/sequelize')
+const mock = require('../mock/seafood');
 
 /* GET users listing. */
 
@@ -27,7 +28,8 @@ class PatongRoutes {
     foods_cksub:foods_cksub,
     foods_noodle:foods_noodle,
     foods_ckrice:foods_ckrice,
-    foodshot:foodshot
+    foodshot:foodshot,
+    seafoodsSuggestLists: mock.imageSuggestLists
   });
   }
 
