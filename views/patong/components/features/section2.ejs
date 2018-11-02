@@ -1,6 +1,6 @@
 <div class="row" id="a1">
-    <div class="col-md-8 mb_center">
-        <h2 class="heading mb_font" >เมนูแนะนำจากทางร้าน</h2>
+    <div class="col-md-12 mb_center">
+        <h2 class="heading mb_font" >Menu</h2>
         <hr class="heading_space"/>
         <div class="slider_wrap">
             <div id="service-slider" class="owl-carousel"> 
@@ -8,13 +8,10 @@
                 <div class="item">
                         <div class="item_inner">
                             <div class="image">
-                                <img class="mb_img_fixed" src='<%= food.imagePath%>' alt="Services Image"/>
-                                <a href="#"></a>
+                                <a href='<%= food.imagePath%>' target="_blank">
+                                    <img class="mb_img_fixed" src='<%= food.imagePath%>' alt="Services Image"/>
+                                </a>
                             </div>
-                            <h3 style="text-align: center;">
-                                <a class="mb_menu_size"><%=food.name%></a>
-                            </h3>
-                            <p class="mb_menu_price"><%=food.price%> บาท</p>
                         </div>
                     </div>
             <% }) %>
@@ -22,7 +19,7 @@
 
         </div>
     </div>
-    <div class="col-md-4 mb_center">
+    <!--<div class="col-md-4 mb_center">
         <h2 class="heading mb_font mb--hide">เมนูของเรา</h2>
         <hr class="heading_space"/>
         <ul class="menu_widget mb_left">
@@ -38,5 +35,5 @@
         </ul>
         <h3></h3>
 
-    </div>
+    </div> -->
 </div>
