@@ -7,7 +7,7 @@ const username = process.env.DB_USERNAME || config.username;
 const password = process.env.DB_PASSWORD || config.password
 
 const sequelize = new Sequelize(server, username, password, {
-    host: process.env.DB_HOST_DOCKER || 'localhost',
+    host: process.env.DB_HOST_DOCKER || '178.128.50.64',
     dialect: 'mysql',
     define: {
         timestamps: true
