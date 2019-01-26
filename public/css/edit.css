@@ -17,7 +17,7 @@
 
 .mb_img_fixed {
     width: 300px;
-    height: 300px;
+    height: 500px;
 }
 
 .mb_menu_price {
@@ -60,6 +60,7 @@
 
 #navigation .fix-nav {
     margin-bottom: -25px;
+    width: 100%;
 }
 
 .gl-map {
@@ -125,10 +126,6 @@
 
     .mb_menu_price {
         font-size: 38px;
-    }
-
-    .mb_img_fixed {
-        height: 400px;
     }
 
     .mb_font_list {

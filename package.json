@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "compile:sass": "node-sass scss/main.scss public/css/tongtong-style.css -w"
   },
   "dependencies": {
     "compression": "^1.7.3",
@@ -19,6 +20,7 @@
     "install": "^0.12.1",
     "morgan": "~1.9.0",
     "mysql2": "^1.6.1",
+    "node-sass": "^4.11.0",
     "nodemon": "^1.18.4",
     "npm": "^6.4.1",
     "sequelize": "^4.38.0",

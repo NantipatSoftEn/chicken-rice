@@ -76,8 +76,9 @@ jQuery(function($) {'use strict';
 // ================= Sliders OWL ================
 	 // cheffs
 	 $("#cheffs-slider, #service-slider").owlCarousel({
-      autoPlay: false,
-      items : 2,
+	  autoPlay: true,
+	  autoplayTimeout: 700,
+      items : 1,
 		pagination : false,
 		navigationText :["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 		navigation : true,

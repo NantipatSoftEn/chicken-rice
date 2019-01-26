@@ -1,0 +1,69 @@
+#about-tongtong {
+    & .img-tongtong {
+        text-align: center;
+        & .pic-tongtong {
+            width: 890px;
+            height: 408px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+    }
+
+    & .paragraph-tongtong {
+        margin-top: 50px;
+        padding: 15px;
+        p {
+            text-indent: 50px;
+            font-size: 24px;
+            font-weight: 100;
+            text-align: justify;
+            letter-spacing: 1px;
+            color: #555f61;
+        }
+    }
+}
+
+@media screen and (max-width: 1140px){
+  
+}
+
+@media screen and (max-width: 960px){
+  
+}
+
+@media screen and (max-width: 768px){
+  
+}
+
+@media screen and (max-width: 576px){
+    #about-tongtong {
+        & .img-tongtong {
+            text-align: center;
+            & .pic-tongtong {
+                width: 70vw;
+                height: 32vw;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+            }
+        }
+    
+        & .paragraph-tongtong {
+            margin-top: 50px;
+            padding: 15px;
+            p {
+                text-indent: 50px;
+                font-size: 18px;
+                font-weight: 100;
+                text-align: justify;
+                letter-spacing: 1px;
+                color: #555f61;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}
